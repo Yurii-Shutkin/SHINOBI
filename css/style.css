@@ -92,7 +92,7 @@ html {
 
 .header {
   display: flex;
-  padding: 18px 125px 90px;
+  padding: 18px 125px 72px;
   margin: 0 auto;
 }
 @media (max-width: 1024px) {
@@ -290,6 +290,21 @@ html {
 }
 .burger-nav__link-wrapper {
   margin-bottom: 15px;
+}
+
+.banner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.banner__title {
+  font-size: 65px;
+  letter-spacing: -5px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner__title span {
+  font-size: 79px;
 }
 
 body {

@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../../vars/vars' as *;
+
+.banner {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &__title {
+        font-size: 65px;
+        letter-spacing: -5px;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            font-size: 79px;
+        }
+    }
+}

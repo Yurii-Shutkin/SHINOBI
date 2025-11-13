@@ -3,7 +3,7 @@
 
 .header {
     display: flex;
-    padding: 18px 125px 90px;
+    padding: 18px 125px 72px;
     margin: 0 auto;
 
     @media(max-width: map.get($width, lap-top)) {
