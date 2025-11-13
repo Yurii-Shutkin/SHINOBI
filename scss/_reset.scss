@@ -9,6 +9,12 @@
 a {
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus,
+    &:active {
+        outline: none
+    }
 }
 
 ul,

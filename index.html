@@ -14,8 +14,47 @@
 </head>
 
 <body>
-
-    <script src="./js/main.js"></script>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <img src="./ img/logo.png" alt="logo" class="header__logo">
+                <ul class="nav__wrapper raleway">
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link">О проекте</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link">О стратегии</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link">Цены и условия</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link">Результаты</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link-bordered">Личный кабинет</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-wrap">
+                <input type="checkbox" id="burger-menu__toggle" class="burger-menu__toggle">
+                <label for="burger-menu__toggle" class="burger" aria-label="Открыть меню">
+                    <span></span>
+                </label>
+                <nav class="burger-nav">
+                    <ul class="burger-nav__wrapper raleway">
+                        <li class="burger-nav__link-wrapper">
+                            <a href="#" class="burger-nav__link">О проекте</a>
+                        </li>
+                        <li class="burger-nav__link-wrapper">
+                            <a href="#" class="burger-nav__link">О стратегии</a>
+                        </li>
+                        <li class="burger-nav__link-wrapper">
+                            <a href="#" class="burger-nav__link">Цены и условия</a>
+                        </li>
+                        <li class="burger-nav__link-wrapper">
+                            <a href="#" class="burger-nav__link">Результаты</a>
+                        </li>
+                        <li class="burger-nav__link-wrapper">
+                            <a href="#" class="burger-nav__link burger-nav__link-bordered">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,221 @@
+@use 'sass:map';
+@use '../../vars/vars' as *;
+
+.header {
+    display: flex;
+    padding: 18px 125px 90px;
+    margin: 0 auto;
+
+    @media(max-width: map.get($width, lap-top)) {
+        padding: 18px 60px 90px;
+    }
+
+    @media(max-width:700px) {
+        padding: 18px 15px 90px;
+    }
+
+    @media(max-width: map.get($width, mobile-l)) {
+        padding: 14px 72px 90px;
+    }
+
+    @media(max-width: map.get($width, mobile-m)) {
+        padding: 14px 47px 90px;
+    }
+
+    @media(max-width: map.get($width, mobile-s)) {
+        padding: 14px 419px 90px;
+    }
+
+    &__logo {
+        margin-right: 7%;
+
+        @media(max-width:1240px) {
+            max-width: 44px;
+
+        }
+
+        @media(max-width:700px) {
+            margin-right: 4%;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-wrap: nowrap;
+        flex: 1;
+
+        @media(max-width: map.get($width, mobile-l)) {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+
+        &:hover {
+            color: map.get($colors, yellow)
+        }
+
+        &:active {
+            display: inline-block;
+            transform: scale(0.9);
+        }
+
+        @media(max-width: 1240px) {
+            font-size: 12px;
+        }
+
+        @media(max-width:700px) {
+            font-size: 8px;
+        }
+
+        &-bordered {
+            display: inline-block;
+            font-size: 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            padding: 11px 46px;
+            border: 1px solid map.get($colors, yellow);
+            color: map.get($colors, yellow);
+            margin-right: 13px;
+
+            &:hover {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            &:active {
+                transform: scale(0.9)
+            }
+
+            @media(max-width: 1240px) {
+                font-size: 13px;
+                padding: 8px 24px;
+                margin-right: 0;
+            }
+
+            @media(max-width:700px) {
+                font-size: 9px;
+                padding: 4px 10px;
+            }
+
+
+        }
+    }
+}
+
+.burger {
+
+    position: relative;
+    display: block;
+    height: 3px;
+    margin-top: 21px;
+    margin-right: 34px;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 27px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: map.get($colors, yellow);
+        top: 10px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 27px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: map.get($colors, yellow);
+        bottom: 7.5px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    span {
+        position: absolute;
+        display: block;
+        width: 27px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: map.get($colors, yellow);
+        top: 50%;
+        left: 0;
+        transition: 0.3s;
+    }
+
+
+    &-menu__toggle:checked+.burger::before {
+        transform: rotate(45deg);
+        top: 0%;
+    }
+
+    &-menu__toggle:checked+.burger::after {
+        transform: rotate(-45deg);
+        bottom: 0%;
+    }
+
+    &-menu__toggle:checked+.burger span {
+        opacity: 0;
+    }
+
+    &-menu__toggle:checked~.burger-nav {
+        display: block;
+    }
+
+    &-wrap {
+        display: none;
+
+        @media(max-width: map.get($width, mobile-l)) {
+            display: block;
+        }
+    }
+
+    &-nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, .8);
+
+        height: 100%;
+        width: 100%;
+        ;
+    }
+
+    &-menu__toggle {
+        display: none;
+    }
+
+    &-nav {
+        padding: 15px 0 0 30px;
+
+        &__link {
+            font-size: 18px;
+
+            &:active,
+            &:focus {
+                color: map.get($colors, yellow)
+            }
+
+            &-wrapper {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

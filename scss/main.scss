@@ -3,3 +3,34 @@
 @use './reset' as *;
 @use './fonts' as *;
 @use './vars/vars' as *;
+@use './main-blocks/main.scss' as *;
+
+body {
+    background: map.get($colors, main-bg-black);
+}
+
+.container {
+
+    margin: 0 auto;
+    max-width: map.get($width, lap-top-l);
+
+    @media(max-width: map.get($width, lap-top)) {
+        max-width: map.get($width, lap-top)
+    }
+
+    @media(max-width: map.get($width, tablet)) {
+        max-width: map.get($width, tablet)
+    }
+
+    @media(max-width: map.get($width, mobile-l)) {
+        max-width: map.get($width, mobile-l)
+    }
+
+    @media(max-width: map.get($width, mobile-m)) {
+        max-width: map.get($width, mobile-m)
+    }
+
+    @media(max-width: map.get($width, mobile-s)) {
+        max-width: map.get($width, mobile-s)
+    }
+}
