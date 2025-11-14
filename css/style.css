@@ -176,7 +176,7 @@ html {
   font-size: 22px;
   border-radius: 50px;
   font-weight: 600;
-  padding: 11px 46px;
+  padding: 8px 46px;
   border: 1px solid #EAFC52;
   color: #EAFC52;
   margin-right: 13px;
@@ -294,9 +294,12 @@ html {
 
 .banner {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 122px;
 }
 @media (max-width: 425px) {
+  .banner {
+    margin: 0 auto 98px;
+  }
   .banner .nav-arrow {
     display: none;
   }
@@ -340,7 +343,7 @@ html {
 .banner__desc {
   display: block;
   font-size: 30px;
-  margin: 0 auto 18px;
+  margin: 0 auto 25px;
   text-align: center;
   line-height: 1.3;
 }
@@ -358,7 +361,7 @@ html {
 }
 .banner__badge {
   max-width: fit-content;
-  margin: 0 auto 34px;
+  margin: 0 auto 38px;
   color: #EAFC52;
   background-color: #171717;
   padding: 13px 25px;
@@ -392,7 +395,7 @@ html {
   background: #EAFC52;
   color: #000;
   font-size: 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 30px 92px;
 }
 @media (max-width: 1024px) {
@@ -406,12 +409,176 @@ html {
     font-size: 18px;
     letter-spacing: -1px;
     padding: 18px 64px;
+    border-radius: 20px;
   }
 }
 
 .nav-arrow {
   display: block;
   cursor: pointer;
+}
+
+.welcome {
+  margin: 0 auto;
+  max-width: 1156px;
+}
+.welcome__wrap {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .welcome__wrap {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+.welcome__top-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+@media (max-width: 1200px) {
+  .welcome__top-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 690px) {
+  .welcome__top-area {
+    margin-bottom: 45px;
+  }
+}
+.welcome .top-area__logo {
+  font-size: 75px;
+  font-weight: 700;
+  margin-right: 34px;
+}
+@media (max-width: 690px) {
+  .welcome .top-area__logo {
+    font-size: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .welcome .top-area__logo {
+    margin-right: 0;
+  }
+}
+.welcome .top-area__desc {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.8));
+  padding: 5px 24px;
+  border-radius: 20px;
+}
+@media (max-width: 690px) {
+  .welcome .top-area__desc {
+    font-size: 14px;
+    padding: 5px 14px;
+  }
+}
+.welcome__bottom-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 82px;
+  margin-bottom: 36px;
+}
+@media (max-width: 1200px) {
+  .welcome__bottom-area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 690px) {
+  .welcome__bottom-area {
+    flex-direction: column;
+    gap: 0;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+.welcome__bottom-block {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+}
+@media (max-width: 690px) {
+  .welcome__bottom-block {
+    font-size: 18px;
+  }
+}
+.welcome__bottom-block-top {
+  margin-bottom: 22px;
+}
+@media (max-width: 690px) {
+  .welcome__bottom-block-top {
+    margin-bottom: 3px;
+  }
+}
+.welcome__bottom-block-middle {
+  display: block;
+  margin: 0 auto;
+  width: 61px;
+  margin-bottom: 46px;
+}
+@media (max-width: 690px) {
+  .welcome__bottom-block-middle {
+    max-width: 22px;
+    margin-bottom: 6px;
+  }
+}
+.welcome__bottom-block-bottom {
+  font-weight: 700;
+  background-image: linear-gradient(rgb(27, 27, 27), rgba(27, 27, 27, 0));
+  border-radius: 20px;
+  padding: 0px 37px 12px;
+}
+@media (max-width: 690px) {
+  .welcome__bottom-block-bottom {
+    padding: 10px 16px;
+  }
+}
+.welcome__bottom-block-left {
+  margin-left: 30px;
+}
+@media (max-width: 1024px) {
+  .welcome__bottom-block-left {
+    margin-left: 0;
+  }
+}
+@media (max-width: 690px) {
+  .welcome__bottom-block-left {
+    margin-bottom: 42px;
+  }
+}
+.welcome__bottom-block-right {
+  margin-right: -35px;
+}
+@media (max-width: 1024px) {
+  .welcome__bottom-block-right {
+    margin-right: 0;
+  }
+}
+.welcome__btn {
+  max-width: fit-content;
+  margin: 0 auto 43px;
+}
+@media (max-width: 690px) {
+  .welcome__btn {
+    display: none;
+  }
+}
+.welcome__arrow {
+  max-width: 37px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 690px) {
+  .welcome__arrow {
+    display: none;
+  }
 }
 
 body {
