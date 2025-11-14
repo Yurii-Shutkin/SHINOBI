@@ -5,6 +5,11 @@
 .welcome {
     margin: 0 auto;
     max-width: 1156px;
+    margin-bottom: 280px;
+
+    @media(max-width: 1200px) {
+        margin-bottom: 100px;
+    }
 
     &__wrap {
         display: flex;

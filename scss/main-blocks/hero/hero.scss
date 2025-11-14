@@ -1,0 +1,169 @@
+@use 'sass:map';
+
+@use '../../vars/vars' as *;
+
+.hero {
+    position: relative;
+    text-align: right;
+    max-width: 1218px;
+    margin: 0 auto;
+
+    @media(max-width: 1200px) {
+        position: static;
+        display: flex;
+        max-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    @media(max-width: map.get($width, lap-top)) {
+        max-width: 700px;
+    }
+
+    &__hero {
+        @media(max-width: map.get($width, tablet)) {
+            margin-bottom: 23px;
+        }
+
+
+        &-wrap {
+            position: absolute;
+            left: -276px;
+            top: -175px;
+
+            @media(max-width: 1200px) {
+                position: relative;
+                left: 0;
+                top: 0;
+                max-width: fit-content;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                margin: 0 auto;
+            }
+        }
+
+        &-pic {
+            max-width: 914px;
+            z-index: -1;
+
+            @media(max-width: 1200px) {
+                max-width: 550px;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                position: relative;
+                max-width: 299px;
+                left: -31px;
+                top: -18px;
+            }
+        }
+
+        &-badge {
+            position: absolute;
+            top: -36px;
+            left: 547px;
+            z-index: -2;
+
+            @media(max-width: 1200px) {
+                left: 280px;
+                top: -108px;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                max-width: 203px;
+                left: 130px;
+                top: -60px;
+            }
+        }
+    }
+
+    &__logo {
+        display: block;
+        font-size: 90px;
+        font-weight: 700;
+        margin-right: 75px;
+        margin-bottom: 20px;
+
+        @media(max-width: 1200px) {
+            margin-right: 0;
+            margin-left: 75px;
+        }
+
+        @media(max-width: map.get($width, tablet)) {
+            font-size: 35px;
+            margin-left: 33px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__desc-wrap {
+        margin-bottom: 163px;
+
+        @media(max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+
+        @media(max-width: map.get($width, tablet)) {
+            max-width: 365px;
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        max-width: 530px;
+        margin-left: auto;
+
+        @media(max-width: 1200px) {
+            max-width: 100%;
+            margin-left: 0;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: #c3c3c3;
+            font-size: 20px;
+            line-height: 1.3;
+            margin-bottom: 32px;
+
+            @media(max-width: 1200px) {
+                flex-direction: row-reverse;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+
+        &-arrow {
+            margin-left: 36px;
+
+            @media(max-width: 1200px) {
+                margin-left: 0;
+                margin-right: 36px;
+                transform: rotate(180deg);
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                max-width: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__arrow {
+        margin: 0 auto;
+
+        @media(max-width: map.get($width, mobile-l)) {
+            display: none;
+        }
+    }
+}
