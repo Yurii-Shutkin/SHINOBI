@@ -5,15 +5,117 @@
     max-width: 1024px;
     margin: 0 auto;
 
+    @media(max-width: map.get($width, mobile-l)) {
+        .nav-arrow {
+            display: none;
+        }
+    }
+
     &__title {
         font-size: 65px;
         letter-spacing: -5px;
         line-height: 1.15;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 28px;
+
+        @media(max-width: map.get($width, lap-top)) {
+            font-size: 50px;
+        }
+
+        @media(max-width: map.get($width, mobile-l)) {
+            font-size: 32px;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
 
         span {
+            color: map.get($colors, yellow);
             font-size: 79px;
+            letter-spacing: 1px;
+
+            @media(max-width: map.get($width, lap-top)) {
+                font-size: 60px;
+            }
+
+            @media(max-width: map.get($width, mobile-l)) {
+                font-size: 41px;
+                letter-spacing: -1px;
+            }
         }
     }
+
+    &__desc {
+        display: block;
+        font-size: 30px;
+        margin: 0 auto 18px;
+        text-align: center;
+        line-height: 1.3;
+
+        @media(max-width: map.get($width, lap-top)) {
+            font-size: 20px;
+        }
+
+        @media(max-width: map.get($width, mobile-l)) {
+            max-width: 250px;
+            font-size: 15px;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__badge {
+        max-width: fit-content;
+        margin: 0 auto 34px;
+        color: map.get($colors, yellow);
+        background-color: map.get($colors, bg-black);
+        padding: 13px 25px;
+        font-size: 25px;
+        border-radius: 20px;
+
+        @media(max-width: map.get($width, lap-top)) {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        @media(max-width: map.get($width, mobile-l)) {
+            font-size: 13px;
+            padding: 12px 13px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 42px;
+    }
+
+    &__arrow {
+        margin: 0 auto;
+    }
+}
+
+.sign-up__btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    background: map.get($colors, yellow);
+    color: #000;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 30px 92px;
+
+    @media(max-width: map.get($width, lap-top)) {
+        font-size: 20px;
+        padding: 18px 70px;
+    }
+
+    @media(max-width: map.get($width, mobile-l)) {
+        font-size: 18px;
+        letter-spacing: -1px;
+        padding: 18px 64px;
+    }
+}
+
+.nav-arrow {
+    display: block;
+    cursor: pointer;
 }

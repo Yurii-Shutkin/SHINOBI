@@ -102,22 +102,22 @@ html {
 }
 @media (max-width: 700px) {
   .header {
-    padding: 18px 15px 90px;
+    padding: 18px 15px 31px;
   }
 }
 @media (max-width: 425px) {
   .header {
-    padding: 14px 72px 90px;
+    padding: 14px 56px 31px;
   }
 }
 @media (max-width: 375px) {
   .header {
-    padding: 14px 47px 90px;
+    padding: 14px 56px 31px;
   }
 }
 @media (max-width: 320px) {
   .header {
-    padding: 14px 419px 90px;
+    padding: 14px 46px 31px;
   }
 }
 .header__logo {
@@ -125,7 +125,7 @@ html {
 }
 @media (max-width: 1240px) {
   .header__logo {
-    max-width: 44px;
+    max-width: 51px;
   }
 }
 @media (max-width: 700px) {
@@ -296,15 +296,122 @@ html {
   max-width: 1024px;
   margin: 0 auto;
 }
+@media (max-width: 425px) {
+  .banner .nav-arrow {
+    display: none;
+  }
+}
 .banner__title {
   font-size: 65px;
   letter-spacing: -5px;
   line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 28px;
+}
+@media (max-width: 1024px) {
+  .banner__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__title {
+    font-size: 32px;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+  }
 }
 .banner__title span {
+  color: #EAFC52;
   font-size: 79px;
+  letter-spacing: 1px;
+}
+@media (max-width: 1024px) {
+  .banner__title span {
+    font-size: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__title span {
+    font-size: 41px;
+    letter-spacing: -1px;
+  }
+}
+.banner__desc {
+  display: block;
+  font-size: 30px;
+  margin: 0 auto 18px;
+  text-align: center;
+  line-height: 1.3;
+}
+@media (max-width: 1024px) {
+  .banner__desc {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__desc {
+    max-width: 250px;
+    font-size: 15px;
+    margin-bottom: 23px;
+  }
+}
+.banner__badge {
+  max-width: fit-content;
+  margin: 0 auto 34px;
+  color: #EAFC52;
+  background-color: #171717;
+  padding: 13px 25px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .banner__badge {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__badge {
+    font-size: 13px;
+    padding: 12px 13px;
+  }
+}
+.banner__btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+.banner__arrow {
+  margin: 0 auto;
+}
+
+.sign-up__btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background: #EAFC52;
+  color: #000;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 30px 92px;
+}
+@media (max-width: 1024px) {
+  .sign-up__btn {
+    font-size: 20px;
+    padding: 18px 70px;
+  }
+}
+@media (max-width: 425px) {
+  .sign-up__btn {
+    font-size: 18px;
+    letter-spacing: -1px;
+    padding: 18px 64px;
+  }
+}
+
+.nav-arrow {
+  display: block;
+  cursor: pointer;
 }
 
 body {

@@ -11,26 +11,26 @@
     }
 
     @media(max-width:700px) {
-        padding: 18px 15px 90px;
+        padding: 18px 15px 31px;
     }
 
     @media(max-width: map.get($width, mobile-l)) {
-        padding: 14px 72px 90px;
+        padding: 14px 56px 31px;
     }
 
     @media(max-width: map.get($width, mobile-m)) {
-        padding: 14px 47px 90px;
+        padding: 14px 56px 31px;
     }
 
     @media(max-width: map.get($width, mobile-s)) {
-        padding: 14px 419px 90px;
+        padding: 14px 46px 31px;
     }
 
     &__logo {
         margin-right: 7%;
 
         @media(max-width:1240px) {
-            max-width: 44px;
+            max-width: 51px;
 
         }
 
