@@ -3,6 +3,7 @@
 @use './reset' as *;
 @use './fonts' as *;
 @use './vars/vars' as *;
+@use './components/main.scss' as *;
 @use './main-blocks/main.scss' as *;
 
 body {

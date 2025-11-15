@@ -6,7 +6,7 @@
     position: relative;
     text-align: right;
     max-width: 1218px;
-    margin: 0 auto;
+    margin: 0 auto 125px;
 
     @media(max-width: 1200px) {
         position: static;
@@ -19,6 +19,10 @@
 
     @media(max-width: map.get($width, lap-top)) {
         max-width: 700px;
+    }
+
+    @media(max-width: map.get($width, tablet)) {
+        margin-bottom: 189px;
     }
 
     &__hero {
