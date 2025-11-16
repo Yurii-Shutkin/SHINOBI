@@ -850,7 +850,7 @@ html {
   display: flex;
   justify-content: center;
   border-top: 1px solid #fff;
-  margin-bottom: 96pxpx;
+  margin-bottom: 96px;
 }
 @media (max-width: 1024px) {
   .how-it-works .steps-wrapper {
