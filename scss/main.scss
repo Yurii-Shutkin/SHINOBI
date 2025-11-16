@@ -7,6 +7,8 @@
 @use './main-blocks/main.scss' as *;
 
 body {
+    overflow-x: hidden;
+
     background: map.get($colors, main-bg-black);
 }
 
