@@ -7,7 +7,106 @@
     width: 100%;
     background: map.get($colors, bg-black);
     top: -14px;
-    height: 200px;
+
+    @media(max-width: map.get($width, tablet)) {
+        top: -190px;
+    }
+
+    &__wrap {
+        width: 1190px;
+        margin: 0 auto;
+        padding-top: 159px;
+        display: flex;
+        gap: 283px;
+        margin-bottom: 50px;
+
+        @media(max-width: 1200px) {
+            width: map.get($width, tablet);
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 168px
+        }
+
+        @media(max-width: map.get($width, tablet)) {
+            position: relative;
+            padding-top: 13px;
+            width: 320px;
+            gap: 45px
+        }
+    }
+
+    &__item {
+
+        @media(max-width: 1200px) {
+            width: 100%;
+        }
+
+        span {
+            display: block;
+            font-style: italic;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            color: map.get($colors, yellow);
+            font-size: 30px;
+            margin-bottom: 13px;
+
+            @media(max-width: 1200px) {
+                text-align: center;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 20px;
+                text-align-last: left;
+                margin-bottom: 32px;
+                margin-left: 1px;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 75px;
+
+            @media(max-width: 1200px) {
+                text-align: center;
+                margin-left: 0;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 40px;
+            }
+
+            &.left {
+                margin-left: 96px;
+
+                @media(max-width: 1200px) {
+                    margin-left: 0;
+                }
+            }
+
+            &.right {
+                margin-left: 52px;
+
+                @media(max-width: 1200px) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto 12px;
+    }
+
+    &__arrow {
+        display: block;
+        margin: 0 auto;
+
+        @media(max-width: map.get($width, tablet)) {
+            display: none;
+        }
+    }
 
     @media(max-width: map.get($width, tablet)) {
         top: -61px
