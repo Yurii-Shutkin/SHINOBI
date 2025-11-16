@@ -1,0 +1,26 @@
+@use 'sass:map';
+
+@use '../../vars/vars' as *;
+
+.make-money {
+    position: relative;
+    width: 100%;
+    background: map.get($colors, bg-black);
+    top: -14px;
+    height: 200px;
+
+    @media(max-width: map.get($width, tablet)) {
+        top: -61px
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        background: map.get($colors, bg-black);
+        top: -81px;
+        height: 150px;
+        transform: skewY(-3.78deg);
+    }
+}

@@ -25,6 +25,10 @@
     &__arrow {
         display: block;
         margin: 0 auto;
+
+        @media(max-width: map.get($width, tablet)) {
+            display: none;
+        }
     }
 
     &::after {
@@ -53,6 +57,8 @@
         display: flex;
         justify-content: center;
         border-top: 1px solid #fff;
+        margin-bottom: 96pxpx;
+
 
         @media(max-width: map.get($width, lap-top)) {
             flex-direction: column;
@@ -66,7 +72,8 @@
         @media(max-width: map.get($width, tablet)) {
             margin-left: 62px;
             padding-left: 18px;
-            gap: 47px;
+            gap: 17px;
+            margin-bottom: 87px;
         }
 
         @media(max-width: map.get($width, mobile-m)) {
@@ -172,29 +179,5 @@
         text-wrap: nowrap;
         overflow: hidden;
         transition: .3s ease;
-
-    }
-}
-
-.section {
-    position: relative;
-    width: 100%;
-    background: map.get($colors, bg-black);
-    top: -14px;
-    height: 200px;
-
-    @media(max-width: map.get($width, tablet)) {
-        top: -61px
-    }
-
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        background: map.get($colors, bg-black);
-        top: -81px;
-        height: 150px;
-        transform: skewY(-3.78deg);
     }
 }

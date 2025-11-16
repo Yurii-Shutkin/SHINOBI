@@ -819,6 +819,11 @@ html {
   display: block;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .how-it-works__arrow {
+    display: none;
+  }
+}
 .how-it-works::after {
   content: "SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI ";
   position: absolute;
@@ -845,6 +850,7 @@ html {
   display: flex;
   justify-content: center;
   border-top: 1px solid #fff;
+  margin-bottom: 96pxpx;
 }
 @media (max-width: 1024px) {
   .how-it-works .steps-wrapper {
@@ -860,7 +866,8 @@ html {
   .how-it-works .steps-wrapper {
     margin-left: 62px;
     padding-left: 18px;
-    gap: 47px;
+    gap: 17px;
+    margin-bottom: 87px;
   }
 }
 @media (max-width: 375px) {
@@ -964,7 +971,7 @@ html {
   transition: 0.3s ease;
 }
 
-.section {
+.make-money {
   position: relative;
   width: 100%;
   background: #171717;
@@ -972,11 +979,11 @@ html {
   height: 200px;
 }
 @media (max-width: 768px) {
-  .section {
+  .make-money {
     top: -61px;
   }
 }
-.section::before {
+.make-money::before {
   content: "";
   display: block;
   position: absolute;
