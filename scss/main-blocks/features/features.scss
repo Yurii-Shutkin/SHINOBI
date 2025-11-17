@@ -1,0 +1,164 @@
+@use "sass:map";
+
+@use '../../vars/vars' as *;
+
+.features {
+    background: map.get($colors, bg-black);
+    margin-top: -14px;
+    padding-top: 154px;
+
+    @media(max-width: map.get($width, tablet)) {
+        margin-top: 0;
+        padding-top: 44px;
+        padding-left: 62.5px;
+    }
+
+    @media(max-width: map.get($width, mobile-m)) {
+        padding-left: 40.5px;
+    }
+
+    @media(max-width: map.get($width, mobile-s)) {
+        padding-left: 12.5px;
+    }
+
+    &__title {
+        letter-spacing: -1.4px;
+
+        @media(max-width: map.get($width, tablet)) {
+            font-size: 28px;
+            letter-spacing: -0.7px;
+            margin-bottom: 9px;
+
+        }
+
+        &-wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+
+            @media(max-width: 1200px) {
+                max-width: 100%;
+                margin-left: 75px;
+            }
+
+            @media(max-width: map.get($width, tablet)) {
+                margin-bottom: 27.5px;
+                margin-left: 0;
+            }
+        }
+
+        &-desc {
+            max-width: fit-content;
+            font-size: 25px;
+            font-weight: 600;
+            font-style: italic;
+            color: map.get($colors, yellow);
+            background-image: linear-gradient(rgba(27, 27, 27, 1), rgba(27, 27, 27, 0));
+            box-shadow: 0 4px 15px #000;
+            padding: 12px;
+            border-radius: 20px;
+            letter-spacing: -1px;
+
+            @media(max-width: map.get($width, tablet)) {
+                padding: 5px 13px;
+                font-size: 15px;
+                margin-left: -13px;
+                letter-spacing: 0;
+            }
+        }
+
+    }
+
+    &__wrap {
+
+        &-col {
+            box-shadow: 0 4px 28px #00000052;
+            margin-bottom: 33px;
+
+            @media(max-width: map.get($width, tablet)) {
+                box-shadow: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding-top: 33px;
+        padding-bottom: 41px;
+
+        @media(max-width: map.get($width, tablet)) {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: calc(1160px - 1160px / 4);
+        border-right: 1px solid;
+        border-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        @media(max-width: 1200px) {
+            width: calc(768px - 768px / 4);
+        }
+
+        @media(max-width: map.get($width, tablet)) {
+            display: flex;
+            align-items: center;
+            border: none;
+            margin-bottom: 13.4px;
+            max-width: 75%;
+        }
+
+        &-marker {
+            width: 15px;
+            height: 15px;
+            border: 1px solid map.get($colors, yellow);
+            outline: 1px solid map.get($colors, yellow);
+            outline-offset: 4px;
+            background: map.get($colors, yellow);
+            border-radius: 50%;
+            margin: 0 auto;
+
+            @media(max-width: map.get($width, tablet)) {
+                width: 6px;
+                height: 6px;
+                outline-offset: 1.5px;
+                margin: 0;
+            }
+        }
+
+        &-desc {
+            display: block;
+            width: 100%;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: -1px;
+            line-height: 1.3;
+            padding: 0 10px;
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 13px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__arrow {
+        // display: block;
+        margin: 0 auto;
+
+        @media(max-width: map.get($width, tablet)) {
+            display: none;
+        }
+    }
+}

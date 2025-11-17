@@ -37,3 +37,8 @@ body {
         max-width: map.get($width, mobile-s)
     }
 }
+
+.inline-centered {
+    display: block;
+    margin: 0 auto;
+}

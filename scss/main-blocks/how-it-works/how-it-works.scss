@@ -161,6 +161,7 @@
                 text-align: center;
                 margin-bottom: 42px;
                 line-height: 1.2;
+                letter-spacing: -1.5px;
 
                 @media(max-width: map.get($width, lap-top)) {
                     font-size: 30px;
