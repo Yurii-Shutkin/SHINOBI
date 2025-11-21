@@ -1,3 +1,192 @@
 @use 'sass:map';
 
 @use '../../vars/vars' as *;
+
+.market-phase {
+    background-color: map.get($colors, bg-black);
+    &__wrap {
+        padding-top: 86px;
+        padding-bottom: 21px;
+        max-width: 1160px;
+        margin: 0 auto;
+
+        @media(max-width: 1200px) {
+            max-width: 768px;
+        }
+    }
+
+    &__subwrap {
+        margin-bottom: 73px;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &--top {
+                margin-bottom: 72px;
+                .market-phase__title {
+                    &::after {
+                        width: 111%;
+                        margin-top: 15px
+                    }
+                }
+            }
+
+            &--bottom {
+                flex-direction: row-reverse;
+
+                .market-phase__title {
+                    direction: rtl;
+                    &::after {
+                        width: 127%;
+                        margin-top: 19px
+                    }
+                }
+            }
+        }
+    }
+    &__title {
+        position: relative;
+        text-wrap: nowrap;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: grey;
+        }
+        &-desc {
+            color: #9b9b9b;
+            font-size: 22px;
+            line-height: 1.1;
+
+            @media(max-width: 1200px) {
+            font-size: 16px;
+        }
+
+            span {
+                color: #fff;
+            }
+
+            &--rightside {
+                text-align: right;
+                margin-top: 11px;
+            }
+
+            &--leftside {
+                text-align: left;
+                max-width: 35%;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+
+    &__sign-up {
+        max-width: fit-content;
+        display: flex;
+        align-items: center;
+        margin-left: 149px;
+        cursor: pointer;
+
+        @media(max-width: 1200px) {
+            margin-left: 0;
+        }
+    }
+
+    &__long-arrow {
+        position: relative;
+        width: 381px;
+        height: 3px ;
+        background: grey;
+        margin-right: 57px;
+
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: grey;
+            width: 15px;
+            height: 3px;
+            border-radius: 10px;
+            right: 0;
+            transform-origin: top right;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+            right: -2.5px;
+            bottom: -1px;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            bottom: 1px;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        max-width: fit-content;
+
+        img {
+            width: 202px;
+            height: 181px;
+            animation: leftside-spin;
+        }
+
+        button {
+            position: absolute;
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+            text-transform: uppercase;
+            top: calc(50% - 30px/2);
+            right: calc(50% - 146px/2);
+        }
+
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 202px;
+            height: 181px;
+            opacity: 20%;
+            inset: 0;
+            background: url('../../../img/star-button.png') center / contain no-repeat;
+        }
+        
+        &:hover {
+            &::before {
+                animation: leftside-spin 10s linear infinite;
+                @keyframes leftside-spin {
+                    from {
+                        transform: rotate(0deg)
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            &::after {
+                animation: rightside-spin 10s linear infinite;
+                @keyframes rightside-spin {
+                    from {
+                        transform: rotate(360deg)
+                    }
+
+                    to {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        display: block;
+        margin: 0 auto;
+        margin-top: -16px;
+    }
+}      

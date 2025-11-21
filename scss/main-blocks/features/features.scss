@@ -6,7 +6,6 @@
     background: map.get($colors, bg-black);
     margin-top: -14px;
     padding-top: 154px;
-    margin-bottom: 100px;
 
     @media(max-width: map.get($width, tablet)) {
         margin-top: 0;
