@@ -1287,7 +1287,7 @@ html {
 @media (max-width: 768px) {
   .market-phase__wrap {
     padding-top: 97px;
-    padding-bottom: 83px;
+    padding-bottom: 104px;
   }
 }
 @media (max-width: 375px) {
@@ -1586,18 +1586,41 @@ html {
 }
 
 .audience {
-  max-width: 1160px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding-top: 63px;
+  padding: 63px 30px 0 30px;
+}
+@media (max-width: 768px) {
+  .audience {
+    max-width: 300px;
+    padding: 29px 0 0 0;
+  }
 }
 .audience__title {
   letter-spacing: 1px;
   margin-bottom: 83px;
 }
+@media (max-width: 768px) {
+  .audience__title {
+    margin-bottom: 59px;
+  }
+}
 .audience__cards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 107px;
+}
+@media (max-width: 1200px) {
+  .audience__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .audience__cards {
+    gap: 17px;
+  }
 }
 .audience__item {
   position: relative;
@@ -1605,6 +1628,11 @@ html {
   text-align: center;
   max-width: 455px;
   border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .audience__item {
+    padding: 28px 30px 34px 30px;
+  }
 }
 .audience__item::before {
   content: "";
@@ -1623,19 +1651,39 @@ html {
   margin: 0 auto;
   margin-bottom: 17px;
 }
+@media (max-width: 768px) {
+  .audience__item--icon {
+    max-width: 86px;
+  }
+}
 .audience__item--title {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 35px;
   color: #EAFC52;
 }
+@media (max-width: 768px) {
+  .audience__item--title {
+    font-size: 20px;
+  }
+}
 .audience__item--desc {
   font-weight: 500;
   font-size: 22px;
 }
+@media (max-width: 768px) {
+  .audience__item--desc {
+    font-size: 13px;
+  }
+}
 .audience__arrow {
   display: block;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .audience__arrow {
+    display: none;
+  }
 }
 
 body {
