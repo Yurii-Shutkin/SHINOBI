@@ -4,9 +4,11 @@
 
 .results {
     padding-top: 118px;
+    margin-bottom: 150px;
     
     @media(max-width: map.get($width, tablet)) {
             padding-top: 47px;
+            margin-bottom: 152px;
         }
 
     &__title {
