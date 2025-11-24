@@ -6,10 +6,12 @@
     max-width: fit-content;
     margin: 0 auto;
     padding-top: 202px;
+    margin-bottom: 116px;
 
     @media(max-width: map.get($width, tablet)) {
             padding-top: 0;
             max-width: 300px;
+            margin-bottom: 103px;
         }
 
     &__title {
