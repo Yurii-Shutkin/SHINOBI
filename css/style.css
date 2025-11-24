@@ -2249,6 +2249,11 @@ html {
   text-align: center;
   margin-bottom: 77px;
 }
+@media (max-width: 768px) {
+  .video-frame {
+    margin-bottom: 131px;
+  }
+}
 .video-frame__title {
   font-size: 75px;
   font-weight: 700;
@@ -2321,16 +2326,34 @@ html {
 .cards {
   max-width: 1160px;
   margin: 0 auto;
-  text-wrap: nowrap;
   letter-spacing: -1.1px;
 }
 .cards__title {
   font-size: 59px;
   letter-spacing: -0.6px;
   margin-bottom: 91px;
+  text-wrap: nowrap;
+}
+@media (max-width: 1200px) {
+  .cards__title {
+    text-wrap: wrap;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .cards__title {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 34px;
+  }
 }
 .cards__title span {
   padding: 12px 24px;
+}
+@media (max-width: 768px) {
+  .cards__title span {
+    padding: 0 8px;
+  }
 }
 .cards__desc {
   display: block;
@@ -2340,12 +2363,29 @@ html {
   text-wrap: wrap;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .cards__desc {
+    font-size: 14px;
+  }
+}
 .cards__wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 70px;
   margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .cards__wrap {
+    justify-content: space-around;
+    column-gap: 30px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .cards__wrap {
+    row-gap: 15px;
+  }
 }
 .cards__item {
   position: relative;
@@ -2358,6 +2398,17 @@ html {
   border-radius: 20px;
   overflow: hidden;
 }
+@media (max-width: 1200px) {
+  .cards__item {
+    width: 520px;
+  }
+}
+@media (max-width: 768px) {
+  .cards__item {
+    width: 370px;
+    height: 161px;
+  }
+}
 .cards__item::before {
   position: absolute;
   content: "";
@@ -2369,11 +2420,24 @@ html {
   right: -35px;
   top: -98px;
 }
+@media (max-width: 768px) {
+  .cards__item::before {
+    width: 135px;
+    height: 135px;
+    right: -24px;
+    top: -72px;
+  }
+}
 .cards__item:last-child {
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .cards__item:last-child {
+    display: none;
+  }
 }
 .cards__item:last-child::before {
   display: none;
@@ -2382,9 +2446,20 @@ html {
   max-width: 30%;
   margin-bottom: 5px;
 }
+@media (max-width: 768px) {
+  .cards__img {
+    width: 20%;
+    margin-top: 10px;
+  }
+}
 .cards__arrow {
   display: block;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cards__arrow {
+    display: none;
+  }
 }
 
 body {

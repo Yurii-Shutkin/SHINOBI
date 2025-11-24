@@ -8,6 +8,10 @@
     text-align: center;
     margin-bottom: 77px;
 
+    @media(max-width: map.get($width, tablet)) {
+            margin-bottom: 131px;
+        }
+
     &__title {
         font-size: 75px;
         font-weight: 700;
