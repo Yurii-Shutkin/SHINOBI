@@ -1701,10 +1701,20 @@ html {
   overflow: hidden;
   padding-top: 125px;
 }
+@media (max-width: 768px) {
+  .progress {
+    padding-top: 17px;
+  }
+}
 .progress__desc {
   max-width: 1160px;
   margin: 0 auto;
-  padding-bottom: 234px;
+  padding: 0 30px 234px 30px;
+}
+@media (max-width: 768px) {
+  .progress__desc {
+    padding: 0 30px 141px 30px;
+  }
 }
 .progress__desc .leftside-text {
   font-weight: 500;
@@ -1712,6 +1722,14 @@ html {
   text-align: left;
   line-height: 1;
   letter-spacing: -1.2px;
+}
+@media (max-width: 768px) {
+  .progress__desc .leftside-text {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-left: 29px;
+    letter-spacing: -0.6px;
+  }
 }
 .progress__desc .yellow-italic-text {
   font-style: italic;
@@ -1721,6 +1739,13 @@ html {
   margin-right: 74px;
   color: #EAFC52;
 }
+@media (max-width: 768px) {
+  .progress__desc .yellow-italic-text {
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-right: 17px;
+  }
+}
 .progress__desc .logo-text {
   font-size: 142.6px;
   text-transform: uppercase;
@@ -1729,10 +1754,25 @@ html {
   line-height: 1.1;
   margin-bottom: 67px;
 }
+@media (max-width: 768px) {
+  .progress__desc .logo-text {
+    font-size: 35px;
+    margin-bottom: 22px;
+    margin-right: 64px;
+  }
+}
 .progress__desc .max-width-text {
   font-size: 26px;
   color: #fff;
   letter-spacing: 0.15px;
+}
+@media (max-width: 768px) {
+  .progress__desc .max-width-text {
+    font-size: 13px;
+    margin: 0 auto;
+    max-width: 81%;
+    line-height: 1.42;
+  }
 }
 .progress__desc .max-width-text .grey-text {
   font-style: italic;
@@ -1741,12 +1781,22 @@ html {
 .progress__desc .max-width-text .badge {
   padding: 0 18px;
 }
+@media (max-width: 768px) {
+  .progress__desc .max-width-text .badge {
+    display: block;
+    max-width: fit-content;
+    font-size: 13px;
+    padding: 4px 18px;
+    margin-top: 19px;
+    margin-left: -4px;
+  }
+}
 .progress__target {
   background: #171717;
 }
 .progress__target::after {
   position: relative;
-  content: "SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI";
+  content: "SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI";
   display: block;
   font-family: "Orbitron", sans-serif;
   font-size: 100px;
@@ -1762,6 +1812,11 @@ html {
   max-width: fit-content;
   margin: 0 auto;
   top: -117px;
+}
+@media (max-width: 768px) {
+  .progress__target .result {
+    top: -62px;
+  }
 }
 .progress__target .result__desc {
   position: relative;
@@ -1780,6 +1835,14 @@ html {
   text-transform: lowercase;
   background-color: #171717;
 }
+@media (max-width: 768px) {
+  .progress__target .result__desc {
+    font-size: 13px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #EAFC52;
+  }
+}
 .progress__target .result__desc::before {
   position: absolute;
   content: "";
@@ -1789,6 +1852,12 @@ html {
   border-radius: 50%;
   background-color: inherit;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .progress__target .result__desc::before {
+    width: 177px;
+    height: 177px;
+  }
 }
 .progress__target .result__desc::after {
   position: absolute;
@@ -1803,11 +1872,25 @@ html {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
+@media (max-width: 768px) {
+  .progress__target .result__desc::after {
+    width: 252px;
+    height: 230px;
+    border: 2px solid transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  }
+}
 .progress__target .result__desc span {
   font-size: 35px;
   text-transform: uppercase;
   color: #fff;
+  font-weight: 700;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .progress__target .result__desc span {
+    font-size: 16px;
+  }
 }
 .progress__target .result__info {
   font-size: 26px;

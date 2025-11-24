@@ -5,10 +5,20 @@
 .progress {
     overflow: hidden;
     padding-top: 125px;
+
+    @media(max-width: map.get($width, tablet)) {
+                padding-top: 17px;
+            }
+
     &__desc {
         max-width: 1160px;
         margin: 0 auto;
-        padding-bottom: 234px;
+        padding: 0 30px 234px 30px;
+
+        @media(max-width: map.get($width, tablet)) {
+        padding: 0 30px 141px 30px;
+                
+            }
         
         .leftside-text {
             font-weight: 500;
@@ -16,6 +26,13 @@
             text-align: left;
             line-height: 1;
             letter-spacing: -1.2px;
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 20px;
+                margin-bottom: 8px;
+                margin-left: 29px;
+                letter-spacing: -0.6px;
+            }
         }
 
         .yellow-italic-text {
@@ -25,6 +42,12 @@
             text-align: right;
             margin-right: 74px;
             color: map.get($colors, yellow);
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 20px;
+                margin-bottom: 16px;
+                margin-right: 17px;
+            }
         }
 
         .logo-text {
@@ -34,12 +57,26 @@
             margin-right: 74px;
             line-height: 1.1;
             margin-bottom: 67px;
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 35px;
+                margin-bottom: 22px;
+                margin-right: 64px;
+            }
         }
 
         .max-width-text {
             font-size: 26px;
             color: #fff;
             letter-spacing: 0.15px;
+
+            @media(max-width: map.get($width, tablet)) {
+                font-size: 13px;
+                margin: 0 auto;
+                max-width: 81%;
+                line-height: 1.42;
+            }
+
             .grey-text {
                 font-style: italic;
                 color: #888;
@@ -47,6 +84,15 @@
 
             .badge { 
                 padding: 0 18px;
+
+                @media(max-width: map.get($width, tablet)) {
+                    display: block;
+                    max-width: fit-content;
+                    font-size: 13px;
+                    padding: 4px 18px;
+                    margin-top: 19px;
+                    margin-left: -4px;
+                }
             }
         }
     }
@@ -56,7 +102,7 @@
 
         &::after {
             position: relative;
-            content: 'SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI';
+            content: 'SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI SHINOBI';
             display: block;
             font-family: 'Orbitron', sans-serif;
             font-size: 100px;
@@ -72,6 +118,10 @@
             max-width: fit-content;
             margin: 0 auto;
             top: -117px;
+            
+            @media(max-width: map.get($width, tablet)) {
+                    top: -62px;
+                }
 
             &__desc {
                 position: relative;
@@ -90,6 +140,13 @@
                 text-transform: lowercase;
                 background-color: map.get($colors, bg-black);
 
+                @media(max-width: map.get($width, tablet)) {
+                    font-size: 13px;
+                    width: 150px;
+                    height: 150px;    
+                    border: 2px solid map.get($colors, yellow);
+                }
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -99,6 +156,11 @@
                     border-radius: 50%;
                     background-color: inherit;
                     z-index: -1;
+
+                    @media(max-width: map.get($width, tablet)) {
+                        width: 177px;
+                        height: 177px;
+                    }
                 }
 
                 &::after {
@@ -115,13 +177,25 @@
                         linear-gradient(#fff 0 0);
                     -webkit-mask-composite: xor;
                             mask-composite: exclude;
+                        
+                    @media(max-width: map.get($width, tablet)) {
+                        width: 252px;
+                        height: 230px;
+                        border: 2px solid transparent;
+                        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+                    }
                 }
 
                 span {
                     font-size: 35px;
                     text-transform: uppercase;
                     color: #fff;
+                    font-weight: 700;
                     font-style: normal;
+
+                    @media(max-width: map.get($width, tablet)) {
+                        font-size: 16px;
+                    }
                 }
             }
 
