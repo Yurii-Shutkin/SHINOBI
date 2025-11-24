@@ -90,6 +90,12 @@ html {
   font-optical-sizing: auto;
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .sign-up__btn {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1935,6 +1941,69 @@ html {
 .progress__btn {
   display: block;
   margin: 0 auto;
+}
+
+.results {
+  padding-top: 118px;
+}
+@media (max-width: 768px) {
+  .results {
+    padding-top: 47px;
+  }
+}
+.results__title {
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 171px;
+  letter-spacing: -2px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1440px) {
+  .results__title {
+    font-size: 64px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .results__title {
+    font-size: 30px;
+    max-width: 254px;
+    margin-left: 25px;
+    line-height: 1.26;
+    margin-bottom: 24px;
+  }
+}
+.results .swiper {
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 45px;
+}
+.results .swiper-slide {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.results .swiper .slide-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.results .swiper .slide-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.results__arrow {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .results__arrow {
+    display: none;
+  }
 }
 
 body {
