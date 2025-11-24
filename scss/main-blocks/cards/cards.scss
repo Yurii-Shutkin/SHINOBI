@@ -1,0 +1,82 @@
+@use 'sass:map';
+
+@use '../../vars/vars' as *;
+
+.cards {
+    max-width: 1160px;
+    margin: 0 auto;
+    text-wrap: nowrap;
+    letter-spacing: -1.1px;
+
+    &__title {
+        font-size: 59px;
+        letter-spacing: -0.6px;
+        margin-bottom: 91px;
+        
+        span {
+            padding: 12px 24px;
+        }
+    }
+
+    &__desc {
+        display: block;
+        font-size: 22px;
+        max-width: 70%;
+        text-align: center;
+        text-wrap: wrap;
+        font-weight: 500;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        position: relative;
+        width: 547px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #1D1C1F;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: #343339;
+            border-radius: 50%;
+            right: -35px;
+            top: -98px;
+        }
+
+        &:last-child {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 30%;
+        margin-bottom: 5px;
+    }
+
+    &__arrow {
+        display: block;
+        margin: 0 auto;
+    }
+}

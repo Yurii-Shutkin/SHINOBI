@@ -6,6 +6,7 @@
     max-width: 1160px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 77px;
 
     &__title {
         font-size: 75px;
@@ -35,6 +36,7 @@
         border: 1px solid #fff;
         height: 491px;
         border-radius: 20px;
+        margin-bottom: 234px;
 
         @media(max-width: 1200px) {
             margin: 0 auto;
@@ -60,6 +62,15 @@
             @media(max-width: 1200px) {
                 border-radius: 0;
             }
+        }
+    }
+
+    &__arrow {
+        display: block;
+        margin: 0 auto;
+
+        @media(max-width: map.get($width, tablet)) {
+            display: none;
         }
     }
 }
