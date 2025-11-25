@@ -6,6 +6,11 @@
     max-width: 1160px;
     margin: 0 auto;
     letter-spacing: -1.1px;
+    margin-bottom: 55px;
+
+    @media(max-width: map.get($width, tablet)) {
+            margin-bottom: 95px;
+        }
 
     &__title {
         font-size: 59px;

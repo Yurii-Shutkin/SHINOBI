@@ -2327,6 +2327,12 @@ html {
   max-width: 1160px;
   margin: 0 auto;
   letter-spacing: -1.1px;
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .cards {
+    margin-bottom: 95px;
+  }
 }
 .cards__title {
   font-size: 59px;
@@ -2459,6 +2465,45 @@ html {
 @media (max-width: 768px) {
   .cards__arrow {
     display: none;
+  }
+}
+
+.disclaimer {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.disclaimer__title {
+  font-size: 40px;
+  font-weight: 300;
+  color: #B20000;
+  text-align: center;
+  margin-bottom: 13px;
+}
+@media (max-width: 768px) {
+  .disclaimer__title {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+}
+.disclaimer__desc {
+  font-size: 20px;
+  max-width: 1047px;
+  display: block;
+  margin-left: 63px;
+  line-height: 1.19;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .disclaimer__desc {
+    max-width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    padding: 0 59px;
+  }
+}
+@media (max-width: 768px) {
+  .disclaimer__desc {
+    font-size: 11px;
   }
 }
 
