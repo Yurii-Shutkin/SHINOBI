@@ -61,7 +61,7 @@
         @media(max-width: 1200px) {
            justify-content: space-around;
            column-gap: 30px;
-           padding: 0 30px;
+           padding: 0 15px;
         }
 
         @media(max-width: map.get($width, tablet)) {

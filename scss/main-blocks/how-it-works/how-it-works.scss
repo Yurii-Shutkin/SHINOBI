@@ -5,7 +5,7 @@
 .how-it-works {
     position: relative;
     overflow: hidden;
-    padding-bottom: 160px;
+    padding-bottom: 155px;
 
     &__title {
         margin-left: 139px;
@@ -57,20 +57,20 @@
         display: flex;
         justify-content: center;
         border-top: 1px solid #fff;
-        margin-bottom: 96px;
+        margin-bottom: 104px;
 
 
         @media(max-width: map.get($width, lap-top)) {
             flex-direction: column;
             border-top: none;
-            border-left: 1px solid #fff;
+            border-left: 2px solid #fff;
             margin-left: 50px;
             padding-left: 45px;
             gap: 40px;
         }
 
         @media(max-width: map.get($width, tablet)) {
-            margin-left: 62px;
+            margin-left: 60px;
             padding-left: 18px;
             gap: 17px;
             margin-bottom: 87px;
@@ -141,6 +141,7 @@
                 font-size: 75px;
                 text-align: center;
                 padding-top: 2px;
+                cursor: pointer;
 
                 @media(max-width: map.get($width, lap-top)) {
                     font-size: 104px;

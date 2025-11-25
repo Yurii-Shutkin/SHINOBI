@@ -10,6 +10,17 @@
     font-size: 25px;
     border-radius: 30px;
     padding: 30px 92px;
+    outline: none;
+    outline-offset: none;
+    transition: all .2s ease;
+
+    &:hover {
+        background: darken($color: map.get($colors, yellow), $amount: 20);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 
     @media(max-width: map.get($width, lap-top)) {
         font-size: 20px;

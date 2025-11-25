@@ -4,10 +4,10 @@
 
 .progress {
     overflow: hidden;
-    padding-top: 125px;
+    padding-top: 122px;
 
     @media(max-width: map.get($width, tablet)) {
-                padding-top: 17px;
+                padding-top: 14px;
             }
 
     &__desc {

@@ -10,6 +10,7 @@
 
     @media(max-width: map.get($width, tablet)) {
         top: -190px;
+        padding-bottom: 73px;
     }
 
     &__wrap {
@@ -18,7 +19,7 @@
         padding-top: 159px;
         display: flex;
         gap: 283px;
-        margin-bottom: 50px;
+        margin-bottom: 48px;
 
         @media(max-width: 1200px) {
             width: map.get($width, tablet);
@@ -30,8 +31,9 @@
         @media(max-width: map.get($width, tablet)) {
             position: relative;
             padding-top: 13px;
-            width: 320px;
-            gap: 45px
+            width: 300px;
+            gap: 47px;
+            margin-bottom: 48px;
         }
     }
 

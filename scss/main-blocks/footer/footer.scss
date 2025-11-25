@@ -100,6 +100,10 @@
                 font-size: 18px;
                 color: map.get($colors, yellow);
 
+                &:hover {
+                    text-decoration: underline;
+                }
+
                 @media(max-width: 1200px) {
                     font-size: 15px;
                 }
@@ -174,6 +178,10 @@
             font-size: 18px;
             color: #C3C3C3;
             margin-bottom: 6px;
+
+            &:hover {
+                color: map.get($colors, yellow);
+            }
 
             @media(max-width: 1200px) {
                 font-size: 14px;

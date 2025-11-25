@@ -18,13 +18,14 @@
 
         @media(max-width:map.get($width, tablet)) {
             margin-bottom: 59px;
+            letter-spacing: 3.8px;
         }
     }
 
     &__cards {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 107px;
+        margin-bottom: 113px;
 
         @media(max-width: 1200px) {
             flex-direction: column;
@@ -44,7 +45,7 @@
         border-radius: 20px;
 
         @media(max-width:map.get($width, tablet)) {
-                padding: 28px 30px 34px 30px;
+                padding: 27px 30px 34px 30px;
             }
         &::before {
             content: "";
@@ -63,7 +64,7 @@
         &--icon {
             display: block;
             margin: 0 auto;
-            margin-bottom: 17px;
+            margin-bottom: 14px;
 
             @media(max-width:map.get($width, tablet)) {
                 max-width: 86px;
@@ -74,8 +75,10 @@
             text-transform: uppercase;
             font-size: 35px;
             color: map.get($colors, yellow);
+
             @media(max-width:map.get($width, tablet)) {
                 font-size: 20px;
+                margin-bottom: 5px;
             }
         }
 

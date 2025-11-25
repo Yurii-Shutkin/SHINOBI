@@ -20,7 +20,7 @@
 <body>
     <!-- <div class="container"> -->
     <div class="container">
-        <header class="header">
+        <header class="header" id="header">
             <nav class="nav">
                 <img src="./img/logo.png" alt="logo" class="header__logo">
                 <ul class="nav__wrapper raleway">
@@ -59,14 +59,16 @@
             </div>
         </header>
     </div>
-    <section class="banner">
+    <section class="banner" id="banner">
         <h1 class="banner__title orbitron"><span>shinobi</span>-ВАША стратегия без ограничений</h1>
         <span class="banner__desc">СТРАТЕГИЯ. ИНДИКАТОРЫ. АВТОТРЕЙДИНГ.</span>
         <div class="banner__badge"><span>*БЕЗ </span>комиссий за сделки</div>
         <button class="banner__btn sign-up__btn">РЕГИСТРАЦИЯ</button>
-        <img src="./img/arrow-icon.png" alt="arrow" class="banner__arrow nav-arrow">
+        <a href="#welcome">
+            <img src="./img/arrow-icon.png" alt="arrow" class="banner__arrow nav-arrow">
+        </a>
     </section>
-    <section class="welcome">
+    <section class="welcome" id="welcome">
         <div class="welcome__wrap">
             <div class="welcome__top-area">
                 <span class="top-area__logo orbitron">SHINOBI </span>
@@ -85,10 +87,12 @@
                 </div>
             </div>
             <button class="welcome__btn sign-up__btn">РЕГИСТРАЦИЯ</button>
-            <img src="./img/arrow-icon.png" alt="arrow" class="welcome__arrow nav-arrow">
+            <a href="#hero">
+                <img src="./img/arrow-icon.png" alt="arrow" class="welcome__arrow arrow">
+            </a>
         </div>
     </section>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__hero">
             <div class="hero__hero-wrap">
                 <picture class="hero__hero-pic">
@@ -123,9 +127,11 @@
                 </div>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="hero__arrow nav-arrow">
+        <a href="#how-it-works">
+            <img src="./img/arrow-icon.png" alt="arrow" class="hero__arrow arrow">
+        </a>
     </section>
-    <section class="how-it-works">
+    <section class="how-it-works" id="how-it-works">
         <div class="container">
             <h2 class="how-it-works__title marked-title">
                 КАК ЭТО <span>РАБОТАЕТ?</span>
@@ -157,9 +163,11 @@
                 </p>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="how-it-works__arrow">
+        <a href="#make-money">
+            <img src="./img/arrow-icon.png" alt="arrow" class="how-it-works__arrow arrow">
+        </a>
     </section>
-    <section class="make-money">
+    <section class="make-money" id="make-money">
         <div class="make-money__wrap">
             <div class="make-money__item">
                 <span class="raleway">Делайте</span>
@@ -171,9 +179,11 @@
             </div>
         </div>
         <button class="make-money__btn sign-up__btn">РЕГИСТРАЦИЯ</button>
-        <img src="./img/arrow-icon.png" alt="arrow" class="make-money__arrow">
+        <a href="#features">
+            <img src="./img/arrow-icon.png" alt="arrow" class="make-money__arrow arrow">
+        </a>
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="features__title-wrap">
             <h2 class="features__title marked-title">
                 ЧТО УМЕЕТ <span>SHINOBI?</span>
@@ -244,9 +254,11 @@
                 </div>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="features__arrow">
+        <a href="#market-phase">
+            <img src="./img/arrow-icon.png" alt="arrow" class="features__arrow arrow">
+        </a>
     </section>
-    <section class="market-phase">
+    <section class="market-phase" id="market-phase">
        <div class="market-phase__wrap">
          <div class="market-phase__subwrap">
             <div class="market-phase__subwrap-item market-phase__subwrap-item--top">
@@ -273,10 +285,12 @@
                 <button class="raleway">РЕГИСТРАЦИЯ</button>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="market-phase__arrow arrow">
+        <a href="#audience">
+            <img src="./img/arrow-icon.png" alt="arrow" class="market-phase__arrow arrow">
+        </a>
        </div>
     </section>
-    <section class="audience">
+    <section class="audience" id="audience">
         <h2 class="audience__title marked-title">
             КОМУ ПОДОЙДЕТ <span>SHINOBI?</span>
         </h2>
@@ -300,9 +314,11 @@
                 </span>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="audience__arrow arrow">
+        <a href="#progress">
+            <img src="./img/arrow-icon.png" alt="arrow" class="audience__arrow arrow">
+        </a>
     </section>
-    <section class="progress">
+    <section class="progress" id="progress">
         <div class="progress__desc">
             <p class="leftside-text orbitron">
                 КАЖЕТСЯ, ЧТО ВСЕ ИДЕАЛЬНО...
@@ -329,7 +345,7 @@
             <button class="progress__btn sign-up__btn">РЕГИСТРАЦИЯ</button>
         </div>
     </section>
-    <section class="results">
+    <section class="results" id="results">
         <h2 class="results__title orbitron">
             РЕЗУЛЬТАТЫ БЭК-ТЕСТОВ:
         </h2>
@@ -372,9 +388,11 @@
                 </div>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="results__arrow arrow">
+        <a href="#offer">
+            <img src="./img/arrow-icon.png" alt="arrow" class="results__arrow arrow">
+        </a>
     </section>
-    <section class="offer">
+    <section class="offer" id="offer">
         <h2 class="offer__title marked-title">
             КАКИЕ <span>ЦЕНЫ И УСЛОВИЯ?</span>
         </h2>
@@ -430,9 +448,11 @@
         <button class="offer__btn sign-up__btn">
             РЕГИСТРАЦИЯ
         </button>
-        <img src="./img/arrow-icon.png" alt="arrow" class="offer__arrow arrow">
+        <a href="#video-frame">
+            <img src="./img/arrow-icon.png" alt="arrow" class="offer__arrow arrow">
+        </a>
     </section>
-    <section class="video-frame">
+    <section class="video-frame" id="video-frame">
         <h2 class="video-frame__title orbitron">
             ЕЩЕ НЕ ГОТОВЫ?
         </h2>
@@ -442,9 +462,11 @@
         <div class="video-frame__wrap">
             <iframe src="https://www.youtube.com/embed/EVHs7jmRdXk"></iframe>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="video-frame__arrow arrow">
+        <a href="#cards">
+            <img src="./img/arrow-icon.png" alt="arrow" class="video-frame__arrow arrow">
+        </a>
     </section>
-    <section class="cards">
+    <section class="cards" id="cards">
         <h2 class="cards__title marked-title">
             ЗАРАБАТЫВАЙТЕ С  <span>CANDLESTORM</span>
         </h2>
@@ -473,9 +495,11 @@
                 <button class="cards__btn sign-up__btn">РЕГИСТРАЦИЯ</button>
             </div>
         </div>
-        <img src="./img/arrow-icon.png" alt="arrow" class="cards__arrow arrow">
+        <a href="#disclaimer">
+            <img src="./img/arrow-icon.png" alt="arrow" class="cards__arrow arrow">
+        </a>
     </section>
-    <section class="disclaimer raleway">
+    <section class="disclaimer raleway" id="disclaimer">
         <h2 class="disclaimer__title">
             ДИСКЛЕЙМЕР
         </h2>
@@ -483,7 +507,7 @@
             SHINOBI — is not a financial advisor. Any suggestions or recommendations by our support team should therefore never be interpreted as financial advice. Сandlestorm is not liable/responsible for losses in any way and it is the user’s sole responsibility to make personal investment/trading decisions. All tools, templates, strategies provided are to be used with caution and expertise. All strategies are regularly backtested, but as markets change, so can the results. Past performance does not guarantee future succes.
         </span>
     </section>
-    <footer class="footer raleway">
+    <footer class="footer raleway" id="footer">
         <div class="footer__wrap">
             <div class="footer__contacts">
                 <p class="contacts__adress">SpaceLab, 2023.</p>
@@ -497,7 +521,9 @@
                     <li class="contacts__social-item"><a href="#">Instagram</a></li>
                     <li class="contacts__social-item"><a href="#">Discort</a></li>
                 </ul>
-                <img src="./img/arrow-icon.png" alt="arrow" class="contacts__arrow arrow">
+                <a href="#header">
+                    <img src="./img/arrow-icon.png" alt="arrow" class="contacts__arrow arrow">
+                </a>
             </div>
             <nav class="footer__nav">
                 <div class="footer__categories">
