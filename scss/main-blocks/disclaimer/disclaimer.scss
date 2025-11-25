@@ -4,7 +4,11 @@
 
 .disclaimer {
     max-width: 1160px;
-    margin: 0 auto;
+    margin: 0 auto 99px;
+
+    @media(max-width: map.get($width, tablet)) {
+            margin: 0 auto 77px;
+        }
 
     &__title {
         font-size: 40px;
